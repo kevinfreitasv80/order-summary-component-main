@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+    font-family: "Red Hat Display", sans-serif;
+    color: hsl(224, 23%, 55%);
+}
+
+main{
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: white;
+    width: 450px;
+    box-shadow: 0 10px 50px hsl(227, 81%, 90%);
+}
+
+.bgCard{
+    border-radius: 1em 1em 0 0;    
+}
+
+p{
+    font-size: 16px;
+}
+a{
+    font-weight: 700;
+}
+
+.sectionPlan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.annualPlan, .price{
+    margin: 0;
+}
+.articleIconMusic{
+    display: flex;
+}
+.iconMusic{
+    margin-right: 1em;
+    width: 48px;
+    height: 48px;
+}
+
+.description{
+    max-width: 270px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.color1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.buttons{
+    display: grid;
+    justify-items: center;
+}
+button{
+    font-family: "Red Hat Display";
+    border: none;
+    color: white;
+    background: #382AE1;
+    font-weight: 700;
+    padding: .9em 0;
+    width: 80%;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.button2{
+    margin: 1em 0;
+    background: white;
+    color: gray;
+}
+.button1:hover{
+    background: #766CF1;
+}
+a:hover{
+    color: #766CF1;
+    text-decoration: none;
+}
+.button2:hover{
+    color: #2c2c2c;
+}
+
+@media screen and (max-width: 465px) {
+    main{
+        width: 90%;
+    }
+    .bgCard{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 315px) {
+    section>h1{
+        font-size: 20px;
+    }
+    .description{
+        font-size: 12px;
+    }
+}
